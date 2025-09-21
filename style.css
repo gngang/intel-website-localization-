@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #212529;
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(to right, #0071c5, #003c7e);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Buttons */
+.learn-btn {
+  margin-top: 10px;
+}
+
+/* Carousel styling */
+.carousel img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+}
