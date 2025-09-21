@@ -1,58 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Intel Sustainability Timeline</title>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Intel Sustainability Timeline</h1>
-    <p>Exploring Intel’s history of innovation and sustainability.</p>
+  <!-- Header / Hero -->
+  <header class="hero" id="hero">
+    <h1 class="site-title">Intel</h1>
+    <h2 class="site-sub">Sustainability Through the Ages</h2>
+    <p class="site-desc">
+      Explore Intel’s journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.
+    </p>
   </header>
 
-  <!-- Timeline wrapper -->
-  <section class="timeline">
-    <!-- Example event -->
-    <div class="event">
-      <img src="images/intel-logo-1968.webp" alt="Intel 1968 Logo">
-      <div class="text">
-        <h2>1968</h2>
-        <p>Intel was founded with a vision of advancing technology sustainably.</p>
-      </div>
-    </div>
+  <!-- Timeline controls (accessible) -->
+  <div class="timeline-wrap">
+    <button class="timeline-btn prev" aria-label="Scroll timeline left">‹</button>
 
-    <div class="event">
-      <img src="images/cpu-8086.jpg" alt="Intel 8086 CPU">
-      <div class="text">
-        <h2>1978</h2>
-        <p>Launch of the Intel 8086 processor, driving computing forward.</p>
-      </div>
-    </div>
+    <!-- Timeline -->
+    <main class="timeline" id="timeline" role="list" aria-label="Intel timeline">
+      <!-- 1968 -->
+      <section class="card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="details-1968">
+        <h3>1968</h3>
+        <p class="title">Intel Founded</p>
+        <img src="images/intel-logo-1968.webp" alt="Intel 1968 logo">
+        <div id="details-1968" class="details">
+          Intel was founded in 1968, beginning its journey in technology and sustainability.
+        </div>
+      </section>
 
-    <div class="event">
-      <img src="images/Intel_i386.jpg" alt="Intel i386 CPU">
-      <div class="text">
-        <h2>1985</h2>
-        <p>The Intel 386 processor introduced, setting new standards for performance.</p>
-      </div>
-    </div>
+      <!-- 1971 -->
+      <section class="card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="details-1971">
+        <h3>1971</h3>
+        <p class="title">First Microprocessor</p>
+        <img src="images/Intel_micro.jpg" alt="Intel first microprocessor">
+        <div id="details-1971" class="details">
+          Intel launched the world’s first commercial microprocessor, revolutionizing computing.
+        </div>
+      </section>
 
-    <div class="event">
-      <img src="images/Intel_micro.jpg" alt="Intel Microchip">
-      <div class="text">
-        <h2>2000s</h2>
-        <p>Intel increased its focus on sustainability, improving efficiency and reducing waste.</p>
-      </div>
-    </div>
+      <!-- 1978 -->
+      <section class="card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="details-1978">
+        <h3>1978</h3>
+        <p class="title">8086 Processor</p>
+        <img src="images/cpu-8086.jpg" alt="Intel 8086 CPU">
+        <div id="details-1978" class="details">
+          Intel introduced the 8086 processor, a milestone that laid the foundation for modern PCs.
+        </div>
+      </section>
 
-    <div class="event">
-      <img src="images/sustainability.jpg" alt="Intel Sustainability">
-      <div class="text">
-        <h2>Today</h2>
-        <p>Intel continues to lead with a commitment to net-zero emissions and sustainable technology.</p>
-      </div>
-    </div>
-  </secti
+      <!-- 1985 -->
+      <section class="card" role="listitem" tabindex="0" aria-expanded="false" aria-controls="details-1985">
+        <h3>1985</h3>
+        <p class="title">386 Processor</p>
+        <img src="images/Intel_i386.jpg" alt="Intel i386 processor">
+        <div id="details-1985" class="details">
+          The Intel 386 brought 32-bit architecture and multitasking power to personal computers.
+        </div>
+      </section>
+    </main>
 
+    <button class="timeline-btn next" aria-label="Scroll timeline right">›</button>
+  </div>
+
+  <!-- Three-column info section (responsive) -->
+  <section class="info-grid" aria-labelledby="info-heading">
+    <h2 id="info-heading" class="sr-only">Intel sustainability highlights</h2>
+
+    <article class="info-card">
+      <div class="icon" aria-hidden="true">🏁</div>
+      <h3>RISE Strategy</h3>
+      <p>Long-term strategy for sustainability, resilience and responsible operations.</p>
+      <a class="btn" href="#" role="button">Learn more</a>
+    </article>
+
+    <article class="info-card">
+      <div class="icon" aria-hidden="true">💧</div>
+      <h3>Water & Efficiency</h3>
+      <p>Reducing water usage and improving energy efficiency across operations.</p>
+      <a class="btn" href="#" role="button">Learn more</a>
+    </article>
+
+    <article class="info-card">
+      <div class="icon" aria-hidden="true">🤝</div>
+      <h3>Commitment</h3>
+      <p>Working toward net-zero emissions and community-driven programs.</p>
+      <a class="btn" href="#" role="button">Learn more</a>
+    </article>
+  </section>
+
+  <!-- Subscription form (accessible) -->
+  <section class="subscribe" aria-labelledby="subscribe-heading">
+    <div class="subscribe-inner">
+      <h2 id="subscribe-heading">Subscribe to our sustainability newsletter</h2>
+
+      <form id="subscribe-form" class="subscribe-form" aria-label="Subscription form" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" inputmode="email" placeholder="Enter your email" aria-required="true" required>
+        <button type="submit" class="btn primary">Subscribe</button>
+      </form>
+
+      <div id="form-message" class="form-message" aria-live="polite" role="status"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <p>Scroll to view timeline | Hover over cards or press Enter to learn more</p>
+    <p>© 2025 Intel. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    /* ======= LevelUp: Auto-detect language & adjust layout ======= */
+    (function() {
+      const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      const html = document.documentElement;
+      if (userLang.startsWith('ar')) {
+        html.lang = 'ar';
+        html.dir = 'rtl';
+        document.body.classList.add('rtl');
+      } else {
+        html.lang = 'en';
+        html.dir = 'ltr';
+        document.body.classList.remove('rtl');
+      }
+
+      // optional manual toggle for quick testing (press "L")
+      window.addEventListener('keydown', (e)=>{
+        if (e.key.toLowerCase() === 'l') {
+          if (html.dir === 'ltr') {
+            html.dir = 'rtl';
+            html.lang = 'ar';
+            document.body.classList.add('rtl');
+          } else {
+            html.dir = 'ltr';
+            html.lang = 'en';
+            document.body.classList.remove('rtl');
+          }
+        }
+      });
+    })();
+
+    /* ======= Timeline controls (scroll) ======= */
+    (function() {
+      const timeline = document.getElementById('timeline');
+      const prev = document.querySelector('.timeline-btn.prev');
+      const next = document.querySelector('.timeline-btn.next');
+
+      function scrollByAmount(amount) {
+        timeline.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+
+      prev.addEventListener('click', ()=> scrollByAmount(-timeline.clientWidth * 0.8));
+      next.addEventListener('click', ()=> scrollByAmount(timeline.clientWidth * 0.8));
+
+      // keyboard arrows to move timeline when it has focus
+      timeline.addEventListener('keydown', (e)=>{
+        if (e.key === 'ArrowRight') { scrollByAmount(timeline.clientWidth * 0.5); }
+        if (e.key === 'ArrowLeft')  { scrollByAmount(-timeline.clientWidth * 0.5); }
+      });
+    })();
+
+    /* ======= Card interactivity & accessibility ======= */
+    (function() {
+      const cards = document.querySelectorAll('.card');
+
+      function toggleCard(card) {
+        const expanded = card.getAttribute('aria-expanded') === 'true';
+        card.setAttribute('aria-expanded', String(!expanded));
+      }
+
+      cards.forEach(card => {
+        // click toggles details
+        card.addEventListener('click', (e)=>{
+          // don't toggle if a link inside card was clicked
+          if (e.target.tagName.toLowerCase() === 'a') return;
+          toggleCard(card);
+        });
+
+        // keyboard: Enter or Space toggles
+        card.addEventListener('keydown', (e)=>{
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleCard(card);
+          }
+        });
+
+        // show details on hover for pointer users (kept UX from original)
+        card.addEventListener('mouseenter', ()=> card.classList.add('hover'));
+        card.addEventListener('mouseleave', ()=> card.classList.remove('hover'));
+      });
+    })();
+
+    /* ======= Subscription form handling (accessible feedback) ======= */
+    (function() {
+      const form = document.getElementById('subscribe-form');
+      const email = document.getElementById('email');
+      const message = document.getElementById('form-message');
+
+      function validEmail(val) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
