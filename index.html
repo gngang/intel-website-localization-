@@ -3,71 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>استدامة Intel عبر العصور</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Intel Sustainability Timeline</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <h1>intel.</h1>
+  <!-- Hero Section -->
+  <header class="hero text-center text-white">
+    <h1 class="fw-bold">Intel</h1>
     <h2>الاستدامة عبر العصور</h2>
     <p>
-      استكشف رحلة Intel عبر الزمن، واكتشف كيف ساهم التزامنا بالابتكار في تشكيل مستقبل أكثر استدامة للتكنولوجيا ومجتمعنا.
+      استكشف رحلة Intel عبر الزمن، واكتشف كيف ساهم الابتكار في تشكيل مستقبل أكثر استدامة للتكنولوجيا وكوكبنا.
     </p>
   </header>
 
-  <section class="timeline">
-    <div class="card">
-      <img src="intel-logo-1968.webp" alt="تأسيس شركة Intel">
+  <!-- Timeline Section -->
+  <main class="timeline d-flex overflow-auto p-4 gap-3" aria-label="Intel timeline">
+    <section class="card flex-shrink-0" style="width: 18rem;">
       <h3>1968</h3>
-      <p>تأسست شركة إنتل.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/history.html" target="_blank" class="btn">اعرف أكثر</a>
-    </div>
-    <div class="card">
-      <img src="cpu-8086.jpg" alt="معالج 8086">
-      <h3>1978</h3>
-      <p>إطلاق معالج 8086.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/history.html" target="_blank" class="btn">اعرف أكثر</a>
-    </div>
-    <div class="card">
-      <img src="Intel_micro.jpg" alt="المعالج 4004">
+      <p class="title">تأسست شركة Intel</p>
+      <img src="images/intel-logo-1968.webp" alt="شعار Intel سنة 1968" class="card-img-top">
+      <div class="details">بداية رحلة Intel في التكنولوجيا والاستدامة.</div>
+    </section>
+
+    <section class="card flex-shrink-0" style="width: 18rem;">
       <h3>1971</h3>
-      <p>أول معالج دقيق في العالم (4004) الذي أحدث ثورة في عالم الحوسبة.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/history.html" target="_blank" class="btn">اعرف أكثر</a>
-    </div>
-    <div class="card">
-      <img src="Intel_i386.jpg" alt="معالج 386">
+      <p class="title">أول معالج دقيق</p>
+      <img src="images/Intel_micro.jpg" alt="المعالج الدقيق الأول من Intel" class="card-img-top">
+      <div class="details">أطلقت Intel أول معالج دقيق تجاري في العالم.</div>
+    </section>
+
+    <section class="card flex-shrink-0" style="width: 18rem;">
+      <h3>1978</h3>
+      <p class="title">معالج 8086</p>
+      <img src="images/cpu-8086.jpg" alt="معالج Intel 8086" class="card-img-top">
+      <div class="details">خطوة أساسية نحو أجهزة الكمبيوتر الحديثة.</div>
+    </section>
+
+    <section class="card flex-shrink-0" style="width: 18rem;">
       <h3>1985</h3>
-      <p>إطلاق معالج 386.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/history.html" target="_blank" class="btn">اعرف أكثر</a>
+      <p class="title">معالج 386</p>
+      <img src="images/Intel_i386.jpg" alt="معالج Intel i386" class="card-img-top">
+      <div class="details">جلب معمارية 32-بت والقوة متعددة المهام للحواسيب.</div>
+    </section>
+  </main>
+
+  <!-- Responsive Three-Column Section -->
+  <section class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="bi bi-globe fs-2 text-primary"></i>
+        <h3>الالتزام</h3>
+        <p>تعمل Intel على تقليل بصمتها الكربونية للوصول إلى صافي انبعاثات صفرية بحلول عام 2040.</p>
+        <a href="#" class="btn btn-outline-primary">تعرف أكثر</a>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-droplet fs-2 text-primary"></i>
+        <h3>المياه والنفايات</h3>
+        <p>نهدف إلى إدارة المياه وإعادة التدوير لتحقيق استخدام مستدام للموارد.</p>
+        <a href="#" class="btn btn-outline-primary">تعرف أكثر</a>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-bar-chart fs-2 text-primary"></i>
+        <h3>استراتيجية RISE</h3>
+        <p>استراتيجية RISE تهدف إلى المسؤولية، الشمولية، الاستدامة والتمكين.</p>
+        <a href="#" class="btn btn-outline-primary">تعرف أكثر</a>
+      </div>
     </div>
   </section>
 
-  <section class="sustainability">
-    <div class="feature">
-      <h3>الاستراتيجية RISE</h3>
-      <p>تركز استراتيجية RISE على المسؤولية والشمولية والاستدامة والتمكين، مع أهداف واضحة لعام 2030.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/corporate-responsibility/2030-goals.html" target="_blank" class="btn">اعرف أكثر</a>
-    </div>
-    <div class="feature">
-      <h3>الالتزام</h3>
-      <p>في عام 2022، تعهدت إنتل بتحقيق صافي انبعاثات صفرية لعملياتها العالمية بحلول عام 2040 مع تقليل البصمة الكربونية.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/corporate-responsibility/environment/climate.html" target="_blank" class="btn">اعرف أكثر</a>
-    </div>
-    <div class="feature">
-      <h3>المياه والنفايات</h3>
-      <p>تخطط إنتل لإعادة مليارات اللترات من المياه العذبة إلى الأحواض المائية بحلول عام 2030 وتحقيق صفر نفايات في مواقعها.</p>
-      <a href="https://www.intel.com/content/www/xr/ar/corporate-responsibility/environment/water.html" target="_blank" class="btn">اعرف أكثر</a>
+  <!-- Bootstrap Accordion (Interactivity) -->
+  <section class="container py-4">
+    <h2 class="text-center mb-3">مزيد من المعلومات</h2>
+    <div class="accordion" id="infoAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            أهداف الاستدامة
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+          <div class="accordion-body">
+            تسعى Intel للوصول إلى صافي انبعاثات صفرية بحلول عام 2040 عبر جميع مصانعها.
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <form class="newsletter">
-      <label for="email">اشترك في نشرتنا الإخبارية للاستدامة</label>
-      <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني">
-      <button type="submit">اشترك</button>
-    </form>
-    <p>© 2025 شركة إنتل. جميع الحقوق محفوظة.</p>
+  <!-- Subscription Form -->
+  <section class="subscribe py-4 bg-light">
+    <div class="container text-center">
+      <h3>اشترك في نشرتنا الإخبارية</h3>
+      <form class="d-flex justify-content-center mt-3" aria-label="نموذج الاشتراك">
+        <label for="email" class="visually-hidden">البريد الإلكتروني</label>
+        <input type="email" id="email" class="form-control w-50 me-2" placeholder="أدخل بريدك الإلكتروني" required>
+        <button type="submit" class="btn btn-primary">اشترك</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-light">
+    <p>&copy; 2025 شركة Intel. جميع الحقوق محفوظة.</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Language Auto-Detect Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lang = navigator.language || navigator.userLanguage;
+      if (lang.startsWith("ar")) {
+        document.documentElement.setAttribute("dir", "rtl");
+        document.documentElement.setAttribute("lang", "ar");
+      } else {
+        document.documentElement.setAttribute("dir", "ltr");
+        document.documentElement.setAttribute("lang", "en");
+      }
+    });
+  </script>
 </body>
 </html>
-
