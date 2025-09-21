@@ -1,200 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Intel Sustainability Timeline</title>
-
-  <!-- Custom CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الاستدامة عبر العصور - Intel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Hero -->
-  <header class="hero" id="hero">
-    <h1 class="site-title">Intel</h1>
-    <h2 class="site-sub">Sustainability Through the Ages</h2>
-    <p class="site-desc">
-      Explore Intel’s journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.
-    </p>
+  <!-- Navigation Bar -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="logo">intel</div>
+    <ul class="nav-links">
+      <li><a href="#timeline">الجدول الزمني</a></li>
+      <li><a href="#sustainability">الاستدامة</a></li>
+      <li><a href="#newsletter">النشرة الإخبارية</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero">
+    <h1>الاستدامة عبر العصور</h1>
+    <p>اكتشف رحلة Intel عبر الزمن، واكتشف كيف ساهم التزامنا بالابتكار في تشكيل مستقبل أكثر استدامة للتكنولوجيا والعالم.</p>
   </header>
 
-  <!-- Timeline controls (accessible) -->
-  <div class="timeline-wrap">
-    <button class="timeline-btn prev" aria-label="Scroll timeline left">‹</button>
-
   <!-- Timeline Section -->
-  <main class="timeline">
-    <!-- 1968 -->
-    <section class="card">
+  <section id="timeline" class="timeline">
+    <article class="card">
+      <img src="intel-logo-1968.webp" alt="شعار Intel 1968">
       <h3>1968</h3>
-      <p class="title">Intel Founded</p>
-      <img src="images/intel-logo-1968.webp" alt="Intel 1968 logo">
-      <div class="details">Intel was founded in 1968, beginning its journey in technology and sustainability.</div>
-    </section>
+      <p>تأسست شركة Intel.</p>
+    </article>
 
-    <!-- 1971 -->
-    <section class="card">
-      <h3>1971</h3>
-      <p class="title">First Microprocessor</p>
-      <img src="images/Intel_micro.jpg" alt="Intel microprocessor">
-      <div class="details">Intel launched the world’s first commercial microprocessor, revolutionizing computing.</div>
-    </section>
-
-    <!-- 1978 -->
-    <section class="card">
+    <article class="card">
+      <img src="cpu-8086.jpg" alt="معالج 8086">
       <h3>1978</h3>
-      <p class="title">8086 Processor</p>
-      <img src="images/cpu-8086.jpg" alt="Intel 8086 CPU">
-      <div class="details">Intel introduced the 8086 processor, a milestone that laid the foundation for modern PCs.</div>
-    </section>
+      <p>معالج 8086 – خطوة كبيرة في عالم الحوسبة.</p>
+    </article>
 
-    <!-- 1985 -->
-    <section class="card">
+    <article class="card">
+      <img src="Intel_i386.jpg" alt="معالج i386">
       <h3>1985</h3>
-      <p class="title">386 Processor</p>
-      <img src="images/Intel_i386.jpg" alt="Intel i386 processor">
-      <div class="details">The Intel 386 brought 32-bit architecture and multitasking power to personal computers.</div>
-    </section>
-  </main>
-
-    <button class="timeline-btn next" aria-label="Scroll timeline right">›</button>
-  </div>
-
-  <!-- Three-column info section (responsive) -->
-  <section class="info-grid" aria-labelledby="info-heading">
-    <h2 id="info-heading" class="sr-only">Intel sustainability highlights</h2>
-
-    <article class="info-card">
-      <div class="icon" aria-hidden="true">🏁</div>
-      <h3>RISE Strategy</h3>
-      <p>Long-term strategy for sustainability, resilience and responsible operations.</p>
-      <a class="btn" href="#" role="button">Learn more</a>
+      <p>إطلاق معالج 386 – ثورة جديدة في الأداء.</p>
     </article>
 
-    <article class="info-card">
-      <div class="icon" aria-hidden="true">💧</div>
-      <h3>Water & Efficiency</h3>
-      <p>Reducing water usage and improving energy efficiency across operations.</p>
-      <a class="btn" href="#" role="button">Learn more</a>
-    </article>
-
-    <article class="info-card">
-      <div class="icon" aria-hidden="true">🤝</div>
-      <h3>Commitment</h3>
-      <p>Working toward net-zero emissions and community-driven programs.</p>
-      <a class="btn" href="#" role="button">Learn more</a>
+    <article class="card">
+      <img src="Intel_micro.jpg" alt="معالج 4004">
+      <h3>4004</h3>
+      <p>أول معالج دقيق في العالم – نقطة تحول في تاريخ التكنولوجيا.</p>
     </article>
   </section>
 
-  <!-- Subscription form (accessible) -->
-  <section class="subscribe" aria-labelledby="subscribe-heading">
-    <div class="subscribe-inner">
-      <h2 id="subscribe-heading">Subscribe to our sustainability newsletter</h2>
+  <!-- Sustainability Section -->
+  <section id="sustainability" class="sustainability">
+    <article>
+      <h2>الاستراتيجية RISE</h2>
+      <p>تلتزم Intel بمبادئ RISE (المسؤولية، الشمول، الاستدامة، التمكين) لتحقيق مستقبل أكثر استدامة بحلول عام 2030.</p>
+      <a href="#" class="btn">اعرف أكثر</a>
+    </article>
 
-      <form id="subscribe-form" class="subscribe-form" aria-label="Subscription form" novalidate>
-        <label for="email" class="sr-only">Email address</label>
-        <input id="email" name="email" type="email" inputmode="email" placeholder="Enter your email" aria-required="true" required>
-        <button type="submit" class="btn primary">Subscribe</button>
-      </form>
+    <article>
+      <h2>الالتزام</h2>
+      <p>في عام 2022، تعهدت Intel بتحقيق صافي انبعاثات كربونية صفرية بحلول عام 2040 عبر مصانعها وعملياتها العالمية.</p>
+      <a href="#" class="btn">اعرف أكثر</a>
+    </article>
 
-      <div id="form-message" class="form-message" aria-live="polite" role="status"></div>
-    </div>
+    <article>
+      <h2>المياه والنفايات</h2>
+      <p>نعمل على إدارة موارد المياه بكفاءة وزيادة إعادة التدوير لتقليل النفايات ودعم الاقتصاد الدائري.</p>
+      <a href="#" class="btn">اعرف أكثر</a>
+    </article>
   </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="newsletter">
+    <h2>اشترك في نشرتنا الإخبارية للاستدامة</h2>
+    <form>
+      <input type="email" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني">
+      <button type="submit">اشترك</button>
+    </form>
+  </section>
+
+  <!-- Back to Top Button (LevelUp) -->
+  <button class="back-to-top" aria-label="العودة للأعلى">↑</button>
 
   <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <p>Scroll to view timeline | Hover over cards or press Enter to learn more</p>
-    <p>© 2025 Intel. All rights reserved.</p>
+  <footer>
+    <p>© 2025 شركة Intel. جميع الحقوق محفوظة.</p>
   </footer>
 
-  <!-- Scripts -->
   <script>
-    /* ======= LevelUp: Auto-detect language & adjust layout ======= */
-    (function() {
-      const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-      const html = document.documentElement;
-      if (userLang.startsWith('ar')) {
-        html.lang = 'ar';
-        html.dir = 'rtl';
-        document.body.classList.add('rtl');
-      } else {
-        html.lang = 'en';
-        html.dir = 'ltr';
-        document.body.classList.remove('rtl');
-      }
-
-      // optional manual toggle for quick testing (press "L")
-      window.addEventListener('keydown', (e)=>{
-        if (e.key.toLowerCase() === 'l') {
-          if (html.dir === 'ltr') {
-            html.dir = 'rtl';
-            html.lang = 'ar';
-            document.body.classList.add('rtl');
-          } else {
-            html.dir = 'ltr';
-            html.lang = 'en';
-            document.body.classList.remove('rtl');
-          }
-        }
-      });
-    })();
-
-    /* ======= Timeline controls (scroll) ======= */
-    (function() {
-      const timeline = document.getElementById('timeline');
-      const prev = document.querySelector('.timeline-btn.prev');
-      const next = document.querySelector('.timeline-btn.next');
-
-      function scrollByAmount(amount) {
-        timeline.scrollBy({ left: amount, behavior: 'smooth' });
-      }
-
-      prev.addEventListener('click', ()=> scrollByAmount(-timeline.clientWidth * 0.8));
-      next.addEventListener('click', ()=> scrollByAmount(timeline.clientWidth * 0.8));
-
-      // keyboard arrows to move timeline when it has focus
-      timeline.addEventListener('keydown', (e)=>{
-        if (e.key === 'ArrowRight') { scrollByAmount(timeline.clientWidth * 0.5); }
-        if (e.key === 'ArrowLeft')  { scrollByAmount(-timeline.clientWidth * 0.5); }
-      });
-    })();
-
-    /* ======= Card interactivity & accessibility ======= */
-    (function() {
-      const cards = document.querySelectorAll('.card');
-
-      function toggleCard(card) {
-        const expanded = card.getAttribute('aria-expanded') === 'true';
-        card.setAttribute('aria-expanded', String(!expanded));
-      }
-
-      cards.forEach(card => {
-        // click toggles details
-        card.addEventListener('click', (e)=>{
-          // don't toggle if a link inside card was clicked
-          if (e.target.tagName.toLowerCase() === 'a') return;
-          toggleCard(card);
-        });
-
-        // keyboard: Enter or Space toggles
-        card.addEventListener('keydown', (e)=>{
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggleCard(card);
-          }
-        });
-
-        // show details on hover for pointer users (kept UX from original)
-        card.addEventListener('mouseenter', ()=> card.classList.add('hover'));
-        card.addEventListener('mouseleave', ()=> card.classList.remove('hover'));
-      });
-    })();
-
-    /* ======= Subscription form handling (accessible feedback) ======= */
-    (function() {
-      const form = document.getElementById('subscribe-form');
-      const email = document.getElementById('email');
-      const message = document.getElementById('form-message');
-
-      function validEmail(val) {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    // Back to top button
+    const btn = document.querySelector(".back-to-top");
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
